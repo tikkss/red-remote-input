@@ -1,4 +1,4 @@
-module RemoteInput
+class RemoteInput
   class CachePath
     def initialize(id)
       @id = id

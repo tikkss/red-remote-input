@@ -1,3 +1,3 @@
-module RemoteInput
+class RemoteInput
   VERSION = "0.0.0"
 end

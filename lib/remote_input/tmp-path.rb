@@ -1,6 +1,6 @@
 require "tmpdir"
 
-module RemoteInput
+class RemoteInput
   class TmpPath
     def initialize(id)
       @id = id

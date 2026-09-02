@@ -9,7 +9,7 @@ require "pathname"
 require_relative "error"
 require_relative "version"
 
-module RemoteInput
+class RemoteInput
   class Downloader
     class TooManyRedirects < Error; end
 
