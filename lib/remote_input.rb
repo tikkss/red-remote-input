@@ -56,8 +56,10 @@ class RemoteInput
   def cache_path
     return @cache_path if @cache_path
     dirname = File.dirname(normalize_path).delete_suffix("/")
-    cache_id = "#{@url.host}#{dirname}".tr("/", "-")
-    @cache_path = CachePath.new(cache_id)
+    cache_id = "#{@url.host}#{dirname}"
+    query = @url.query
+    cache_id += "-#{query}" if query and not query.empty?
+    @cache_path = CachePath.new(cache_id.tr("/:?*", "-"))
   end
 
   def normalize_path
