@@ -1,4 +1,4 @@
-module RemoteInput
+class RemoteInput
   class Error < StandardError
   end
 end

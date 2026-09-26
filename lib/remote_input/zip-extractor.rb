@@ -1,6 +1,6 @@
 require 'zip'
 
-module RemoteInput
+class RemoteInput
   class ZipExtractor
     def initialize(path)
       @path = path
